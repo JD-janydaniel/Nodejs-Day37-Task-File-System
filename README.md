@@ -10,11 +10,13 @@
   <ul>
     <li>The create request is use to create a date and time of the current timestamp</li>
     <li>Add /create to the base url to create a date and time of the current timestamp</li>
+    <li>https://nodejs-day37-task-file-system.onrender.com/create</li>
   </ul>
    <li>Read</li>
   <ul>
     <li>The read request is use to read a date and time of the current timestamp</li>
     <li>Add /read to the base url to read the date and time of the current timestamp</li>
+    <li>https://nodejs-day37-task-file-system.onrender.com/read</li>
   </ul>
 </ol>
 
