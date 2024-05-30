@@ -17,7 +17,10 @@ const dirname = path.dirname(filename);
 app.use(express.json());
 
 
-//routes
+//default routes
+app.get('/',(req,res)=>{
+  res.status(200).send('Welcome to Nodejs File System, If you want to create Timestamp give /create or If you want to read the created Timestamp give /read along with the Render url')
+})
 //create route
 app.get('/create',(req,res)=>{
     let toDay = format(new Date(),'dd-mm-yyyy-HH-mm-ss')
