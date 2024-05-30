@@ -23,11 +23,11 @@ app.get('/',(req,res)=>{
 })
 //create route
 app.get('/create',(req,res)=>{
-    let toDay = format(new Date(),'dd-mm-yyyy-HH-mm-ss')
+    let toDay = format(new Date(),'dd-MM-yyyy-HH-mm-ss')
     // console.log(toDay);
     const filePath = `Timestamp/${toDay}.txt`
     fs.writeFileSync(filePath,`${toDay}`,'utf8')
-    res.status(200).send('Timestamp are created successfully')
+    res.status(200).send(`Timestamp are created successfully ${toDay}`)
 })
 //read route
 app.get('/read', (req, res) => {
